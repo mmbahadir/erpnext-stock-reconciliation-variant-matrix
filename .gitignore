@@ -1,7 +1,20 @@
+# macOS
 .DS_Store
+
+# Python
+__pycache__/
 *.pyc
 *.egg-info
+.coverage
+
+# Node / Frontend
+node_modules/
+dist/
+
+# Env
+.env
+
+# Editor / Tools
 *.swp
 tags
-node_modules
-__pycache__
+
