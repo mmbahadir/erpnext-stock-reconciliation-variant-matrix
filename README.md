@@ -1,33 +1,37 @@
-### Stock Reconciliation Variant Matrix
+# ERPNext Stock Reconciliation Variant Matrix
 
-Variant matrix for Stock Reconciliation (Nebim style)
+ERPNext için **Stock Reconciliation** ekranında  
+**Nebim tarzı (Renk × Beden)** varyant matrisi ile hızlı stok girişi sağlar.
 
-### Installation
+## ✨ Özellikler
 
-You can install this app using the [bench](https://github.com/frappe/bench) CLI:
+- Renk × Beden matris görünümü
+- Ok tuşları ile hücreler arası gezinme
+- Ctrl + Enter ile satırlara aktarma
+- Aynı ürüne tekrar ekleme (qty üzerine ekler)
+- Matris aktarıldıktan sonra:
+  - Matris kapanmaz
+  - Hücreler temizlenir
+  - Yeni ürün girilebilir
+- Responsive tablo (dar ekranda taşma yapmaz)
+- ERPNext Stock Reconciliation ile **tam uyumlu**
+
+## 🧩 Kullanım Senaryosu
+
+- Tek tek varyant seçmeden
+- Çok sayıda beden / renk için
+- Hızlı ve hatasız stok sayımı
+
+Özellikle:
+- Tekstil
+- Ayakkabı
+- Çocuk giyim
+- Nebim’den ERPNext’e geçen işletmeler
+
+## 📦 Kurulum
 
 ```bash
 cd $PATH_TO_YOUR_BENCH
-bench get-app $URL_OF_THIS_REPO --branch develop
+bench get-app https://github.com/mmbahadir/erpnext-stock-reconciliation-variant-matrix.git
 bench install-app stock_reconciliation_variant_matrix
-```
 
-### Contributing
-
-This app uses `pre-commit` for code formatting and linting. Please [install pre-commit](https://pre-commit.com/#installation) and enable it for this repository:
-
-```bash
-cd apps/stock_reconciliation_variant_matrix
-pre-commit install
-```
-
-Pre-commit is configured to use the following tools for checking and formatting your code:
-
-- ruff
-- eslint
-- prettier
-- pyupgrade
-
-### License
-
-mit
